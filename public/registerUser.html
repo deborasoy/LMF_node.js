@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="./css/loginStyle.css">
+        <title>L.M.F</title>
+        
+    </head>
+    <body>
+        <section>
+            <div class="contenedor">
+                <form action="/record" method="post" id="formRegister">
+                    <h2>Registrarse</h2>
+                    <div class="seccion">
+                        <input type="text" required id="nameCompany" name="nameCompany" autocomplete="off">
+                        <label for="nameCompany"> Nombre de la empresa/comercio/evento</label>
+                    </div>
+                    <div class="seccion">
+                        <input type="tel" required id="tel" name="tel" autocomplete="off">
+                        <label for="tel">Numero de celular</label>
+                    </div>
+        
+                    <div class="seccion">
+                        <input type="text" required autocomplete="email" name="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+        
+                    <div class="seccion">
+                        <input type="password" minlength="6" required autocomplete="new-password" id="passwordRegister" name="passwordRegister">
+                        <label for="passwordRegister">Contraseña</label>
+                    </div>
+        
+                    <div class="seccion">
+                        <input type="password" minlength="6" required autocomplete="new-password" id="repitPassword" name="repitPassword">
+                        <label for="repitPassword"> Repetir contraseña</label>
+                    </div>
+                    <div class="seccionBtn">
+                        <button type="button" class="submit" id="btnRegister">Registrarse</button>
+                    </div>
+                    <div class="seccionInfo">
+                        <p>
+                            Al registrarme y ser parte de L.M.F acepto los
+                            <a href="#">Terminos y condiciones </a> que conforman nuestras
+                            <a href="#">Políticas de privacidad</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script src="js/registerUser.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
